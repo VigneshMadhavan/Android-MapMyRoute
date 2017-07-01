@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vimadhavan.mapmyroute.activity.NewRouteAcitivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/newMap"/>
+
+    <TextView
+
+        android:visibility="gone"
+        android:padding="2dp"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:backgroundTintMode="multiply"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:alpha="0.3"
+        android:textColor="@color/colorAccent"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewBg" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:visibility="gone"
+        android:padding="2dp"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:text="New"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+
+
+
+    <ImageButton
+
+        android:background="@color/colorAccent"
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_marginEnd="24dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+    <ImageButton
+        android:visibility="gone"
+        android:background="@color/colorAccent"
+        android:id="@+id/stopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_save"
+        android:layout_marginEnd="24dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+
+</RelativeLayout>

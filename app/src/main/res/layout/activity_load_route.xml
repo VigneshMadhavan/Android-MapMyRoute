@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vimadhavan.mapmyroute.activity.LoadRoute">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/savedMap"/>
+
+    <TextView
+
+        android:visibility="gone"
+        android:padding="2dp"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:backgroundTintMode="multiply"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:alpha="0.3"
+        android:textColor="@color/colorAccent"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewBg1" />
+
+    <TextView
+        android:id="@+id/msg1"
+        android:visibility="gone"
+        android:padding="2dp"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:text="New"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+
+
+
+
+</RelativeLayout>

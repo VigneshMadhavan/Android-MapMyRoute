@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vimadhavan.mapmyroute">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAqDXQLFOOyXp4BJ2Xy7VUKIAfC4JkocL8" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewRouteAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SavedRoutesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoadRoute"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PopupActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.SettingActivity"></activity>
+    </application>
+
+</manifest>
