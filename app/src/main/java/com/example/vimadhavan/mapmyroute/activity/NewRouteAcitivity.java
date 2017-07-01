@@ -150,7 +150,7 @@ public class NewRouteAcitivity extends AppCompatActivity implements MyInterface,
         Log.d("Debug:", "startMap");
         tracker = new GPSTracker(this);
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        int dist = Integer.parseInt(sp.getString("edit_text_preference_1", "1"));
+        int dist = Integer.parseInt(sp.getString("edit_text_preference_1", "10"));
         GPSTracker.MIN_DISTANCE_CHANGE_FOR_UPDATES = dist;
         setUpMapIfNeeded();
         if (tracker.canGetLocation()) {
